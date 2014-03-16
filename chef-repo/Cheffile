@@ -1,0 +1,33 @@
+#!/usr/bin/env ruby
+#^syntax detection
+
+site "http://community.opscode.com/api/v1"
+
+# cookbook "chef-client"
+cookbook "apt"
+cookbook "git"
+cookbook "mysql"
+cookbook "apache2"
+cookbook "php"
+cookbook "vim"
+cookbook "memcached"
+# cookbook "redis"
+cookbook "zsh"
+cookbook "oh_my_zsh", {
+  :github => "shingara/oh-my-zsh-chef"
+}
+cookbook "ruby_build", {
+  :github => "fnichol/chef-ruby_build",
+  :ref => "v0.7.2"
+}
+cookbook "rbenv", {
+  :github => "fnichol/chef-rbenv"
+}
+cookbook "drush", {
+  :git => "https://github.com/msonnabaum/chef-drush.git",
+  :ref => "master"
+}
+cookbook "phpcs", {
+  :github => "escapestudios-cookbooks/phpcs",
+  :ref => "master"
+}
