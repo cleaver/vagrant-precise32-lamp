@@ -15,6 +15,9 @@ run_list(
 default_attributes(
   :mysql  => {
     :server_root_password   => "root",
+    :server_repl_password   => "password",
+    :server_debian_password => "password",
+    :allow_remote_root      => true,
     :service_name           => "mysql",
     :basedir                => "/usr",
     :data_dir               => "/var/lib/mysql",

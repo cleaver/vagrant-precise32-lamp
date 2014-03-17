@@ -11,7 +11,7 @@ cookbook "apache2"
 cookbook "php"
 cookbook "vim"
 cookbook "memcached"
-# cookbook "redis"
+cookbook "redis"
 cookbook "zsh"
 cookbook "oh_my_zsh", {
   :github => "shingara/oh-my-zsh-chef"

@@ -11,9 +11,9 @@ run_list(
 )
 default_attributes(
 
-  # :git    => {
-  #   :prefix => "/usr/local"
-  # },
+    # :git    => {
+    #   :prefix => "/usr/local"
+    # },
   :rbenv  => {
     :user_installs => [
       {
