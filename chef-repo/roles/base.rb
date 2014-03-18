@@ -6,8 +6,7 @@ run_list(
   "recipe[ruby_build]",
   "recipe[rbenv::user]",
   "recipe[vim]",
-  "recipe[zsh]",
-  "recipe[oh_my_zsh]"
+  "recipe[zsh]"
 )
 default_attributes(
 
@@ -24,5 +23,5 @@ default_attributes(
         :global => "1.9.3-p484"
       }
     ]
-  }
+  },
 )
