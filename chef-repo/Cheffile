@@ -16,13 +16,13 @@ cookbook "zsh"
 # cookbook "oh_my_zsh", {
 #   :github => "shingara/oh-my-zsh-chef"
 # }
-cookbook "ruby_build", {
-  :github => "fnichol/chef-ruby_build",
-  :ref => "v0.7.2"
-}
-cookbook "rbenv", {
-  :github => "fnichol/chef-rbenv"
-}
+# cookbook "ruby_build", {
+#   :github => "fnichol/chef-ruby_build",
+#   :ref => "v0.7.2"
+# }
+# cookbook "rbenv", {
+#   :github => "fnichol/chef-rbenv"
+# }
 cookbook "drush", {
   :git => "https://github.com/msonnabaum/chef-drush.git",
   :ref => "master"

@@ -7,3 +7,9 @@ if [ ! -d /vagrant_data/www ]; then
   rm -rf /var/www
   ln -s /vagrant_data/www /var/www
 fi
+
+if [ ! -d /home/vagrant/.oh-my-zsh ]; then
+  git clone git://github.com/robbyrussell/oh-my-zsh.git /home/vagrant/.oh-my-zsh
+  cp /home/vagrant/.oh-my-zsh/templates/zshrc.zsh-template /home/vagrant/.zshrc
+  usermod -s /bin/zsh vagrant
+fi
