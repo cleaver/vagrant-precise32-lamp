@@ -19,6 +19,7 @@
 
 package 'apache2' do
   package_name node['apache']['package']
+  version "2.2.22-1ubuntu1.5"
 end
 
 service 'apache2' do

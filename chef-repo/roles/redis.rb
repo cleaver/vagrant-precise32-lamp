@@ -1,7 +1,9 @@
 name "redis"
 description "Add Redis support"
 run_list(
-  "recipe[redis]"
+  "recipe[redis]",
+  "recipe[redis::install_from_package]"
+  # ,"recipe[redis::server]"
 )
 default_attributes(
   :redis  => {
@@ -10,6 +12,7 @@ default_attributes(
     :config_path => "/etc/redis/redis.conf",
     :daemonize   => "yes",
     :timeout     => "300",
-    :loglevel    => "notice"
+    :loglevel    => "notice",
+    # :server      => {:run_state => "start"}
   }
 )

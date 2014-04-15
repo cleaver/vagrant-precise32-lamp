@@ -1,9 +1,11 @@
 name 'base'
 description 'Install basic tools'
 run_list(
+  "recipe[apt]",
   "recipe[git]",
   # "recipe[ruby_build]",
   # "recipe[rbenv::user]",
+  # "recipe[runit]",
   "recipe[vim]",
   "recipe[zsh]"
 )
